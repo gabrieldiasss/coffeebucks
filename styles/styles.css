@@ -1,0 +1,177 @@
+/* ===== Global ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-title: #36201E;
+    --text-subtitle: #5B5757;
+    --color-button: #AA8244;
+    --color-button-hover: #bd8839;
+    --background: #f7f7f7;
+    --shape: #fff;
+    --black: #000;
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+
+    html {
+        font-size: 87.5%; 
+    }
+}
+
+@media(max-width: 400px) {
+    html {
+        font-size: 81.125%;
+    }
+}
+
+@media(max-width: 350px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: Poppins;
+    background: var(--background);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+h1, strong {
+    font-weight: 700;
+    color: var(--text-title);
+}
+
+h2, h3 {
+    font-weight: 500;
+    color: var(--text-subtitle);
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: var(--color-button);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+i {
+    font-size: 36px;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: var(--shape);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 5rem;
+
+    width: 90%;
+
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header .content .logo strong {
+    font-size: 2rem;
+    color: var(--text-title);
+}
+
+header .content nav {
+    display: none;
+}
+
+header .content ul {
+    display: flex;
+    list-style: none;
+}
+
+header .content ul li a {
+    text-decoration: none;
+    color: var(--black);
+
+    font-weight: 600;
+    font-size: 1.25rem;
+
+    padding: 2rem;
+}
+
+.nav__menu {
+    top: -100rem;
+}
+
+.nav__menu.on {
+    background-color: var(--shape);
+
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    transition: 1.2s;
+
+    padding: 1rem 0;
+}
+
+.nav__menu.on nav {
+    display: block;
+}
+
+.nav__menu.on nav ul {
+    display: block;
+    text-align: center;
+}
+
+.nav__menu.on nav ul li a{
+    line-height: 4rem;
+}
+
+@media(min-width: 500px) {
+
+    header .content nav {
+        display: block;
+    }
+
+    header .content i {
+        display: none;
+    }
+
+}
+
+
+
+
+
