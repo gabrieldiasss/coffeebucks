@@ -63,6 +63,13 @@ button {
     border: 0;
     outline: 0;
     background: var(--color-button);
+    color: var(--shape);
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
 }
 
 img {
@@ -72,6 +79,10 @@ img {
 
 i {
     font-size: 36px;
+}
+
+section {
+    padding: 4rem 0 2rem 0;
 }
 
 /* ===== HEADER ===== */
@@ -159,6 +170,33 @@ header .content ul li a {
     line-height: 4rem;
 }
 
+/* ===== HOME ===== */
+
+#home {
+    
+}
+
+#home .content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    max-width: 500px;
+}
+
+#home h2 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    max-width: 500px;
+}
+
+#home button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
 @media(min-width: 500px) {
 
     header .content nav {
@@ -170,6 +208,21 @@ header .content ul li a {
     }
 
 }
+
+@media(min-width: 1024px) {
+
+    #home .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        max-width: 1024px;
+
+        margin-top: 2rem;
+    }
+
+}
+
 
 
 
