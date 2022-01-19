@@ -67,12 +67,13 @@ h3 {
 input, button {
     border: 0;
     outline: 0;
+    font-family: Poppins;
 }
 
 button {
     background: var(--color-button);
     color: var(--shape);
-    font-family: Poppins;
+    
     cursor: pointer;
 }
 
@@ -91,4 +92,9 @@ i {
 
 li {
     list-style: none;
+}
+
+::-webkit-input-placeholder {
+    font-family: Poppins;
+    font-size: 1rem;
 }

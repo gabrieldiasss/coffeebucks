@@ -49,7 +49,8 @@ header .content ul li a {
 }
 
 .nav__menu {
-    top: -100rem;
+    top: -100%;
+    transition: 1s;
 }
 
 .nav__menu.on {
@@ -86,13 +87,13 @@ header .content ul li a {
 /* ===== HOME ===== */
 
 #home {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 #home .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     width: 90%;
     margin: 0 auto;
@@ -156,7 +157,7 @@ header .content ul li a {
 /* ====== PRODUCTS ====== */
 
 #products {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 #products .content {
@@ -264,7 +265,10 @@ header .content ul li a {
 
 #newsletter .content .input-newsletter input {
     width: 80%;
+    font-size: 1.2rem;
 }
+
+
 
 #newsletter .content .input-newsletter button {
     width: 30%;
@@ -337,76 +341,7 @@ footer .footer_content .social {
     gap: 1.2rem;
 }
 
-/* ===== MEDIA QUERIES ===== */
 
-@media(min-width: 600px) {
 
-    header .content nav {
-        display: block;
-    }
-
-    header .content i {
-        display: none;
-    }
-
-}
-
-@media(min-width: 1024px) {
-
-    #home .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        max-width: 1024px;
-
-        margin-top: 2rem;
-    }
-
-    #delivery .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse; 
-
-        text-align: left;
-        max-width: 1024px;
-    }
-
-    #delivery .img-delivery {
-        width: 450px;
-    }
-
-    #newsletter {
-        max-width: 1024px;
-        border-radius: 1rem;
-    }
-
-    #newsletter .content {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-
-        padding: 2rem 4rem;
-    }
-
-    #newsletter .content .texts {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #newsletter .content .input-newsletter {
-        width: 70%;
-    }
-
-    #newsletter .content .img-newsletter {
-        width: 270px;
-    }
-
-    #newsletter .content .input-newsletter {
-        margin: 0;
-    }
-
-}
 
 
