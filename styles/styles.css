@@ -195,6 +195,40 @@ header .content ul li a {
 #home button {
     padding: 1rem 2rem;
     border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* ===== DELIVERY ===== */
+
+#delivery .content {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#delivery h1 {
+    font-size: 2.8rem;
+    max-width: 500px;
+}
+
+#delivery h2 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    max-width: 500px;
+}
+
+#delivery button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.img-delivery {
+    width: 280px;
 }
 
 @media(min-width: 500px) {
@@ -221,11 +255,21 @@ header .content ul li a {
         margin-top: 2rem;
     }
 
+    #delivery .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        text-align: left;
+
+        max-width: 1024px;
+    }
+
+    #delivery .img-delivery {
+        width: 450px;
+    }
+
 }
-
-
-
-
-
 
 
