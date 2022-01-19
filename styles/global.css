@@ -9,6 +9,7 @@
 :root {
     --text-title: #36201E;
     --text-subtitle: #5B5757;
+    --text-footer: #AAA9AE;
     --color-button: #AA8244;
     --color-button-hover: #bd8839;
     --background-newsletter: #B38A4C;
@@ -54,9 +55,13 @@ h1, strong {
     color: var(--text-title);
 }
 
-h2, h3 {
+h2 {
     font-weight: 500;
     color: var(--text-subtitle);
+}
+
+h3 {
+    font-weight: 500;
 }
 
 input, button {
@@ -82,4 +87,8 @@ img {
 
 i {
     font-size: 36px;
+}
+
+li {
+    list-style: none;
 }
