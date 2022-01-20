@@ -87,7 +87,7 @@ header .header-content ul li a {
 /* ===== HOME ===== */
 
 #home {
-    margin-top: 6rem;
+    padding-top: 6rem;
 }
 
 #home .home-content {
@@ -116,10 +116,27 @@ header .header-content ul li a {
     font-size: 1.2rem;
 }
 
+/* ==== ACTIVE MENU LINK ==== */
+
+.active-link{
+    position: relative;
+  }
+  
+  .active-link::before{
+    content: '';
+    position: absolute;
+    bottom: 1.4rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+
 /* ===== DELIVERY ===== */
 
 #delivery {
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 #delivery .delivery-content {
@@ -157,7 +174,7 @@ header .header-content ul li a {
 /* ====== PRODUCTS ====== */
 
 #products {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 #products .content {
@@ -192,6 +209,7 @@ header .header-content ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #products .products-grid strong {
@@ -267,8 +285,6 @@ header .header-content ul li a {
     width: 80%;
     font-size: 1.2rem;
 }
-
-
 
 #newsletter .newsletter-content .input-newsletter button {
     width: 30%;
