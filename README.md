@@ -1,5 +1,5 @@
 
-![COFFEEBUCKS](https://user-images.githubusercontent.com/71296002/150441047-868c1c33-39f0-4f0d-ab5e-38553c6e7073.png)
+
 
 
 <!-- PROJECT LOGO -->
@@ -9,7 +9,7 @@
     
   </a>
   
-  <h1 align="center">COFFEEBUCKS</h1>
+  <img src="https://user-images.githubusercontent.com/71296002/150441047-868c1c33-39f0-4f0d-ab5e-38553c6e7073.png" />
 
   <p align="center">
    Coffeebucks é uma página de vendas para cafetaria.
